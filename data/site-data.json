@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "headline": "SHYAM P S",
+    "subtitle": "DI Conformist • DI Colorist • Tutorial Content Creator",
+    "bio": "Precision conforming and theatrical color grading inside DaVinci Resolve Studio across Malayalam, Telugu, Tamil, Kannada & Tulu cinema—spanning feature films, ZEE5 OTT web series, acclaimed short films, commercials, and music videos.",
+    "portrait": ""
+  },
+  "categories": [
+    "Feature Films",
+    "Web Series / OTT",
+    "Short Films",
+    "Advertisements",
+    "Music Videos"
+  ],
+  "labProjects": [
+    {
+      "title": "Panthadikam",
+      "badge": "ZEE5 WEB SERIES",
+      "beforeImg": "",
+      "afterImg": ""
+    }
+  ],
+  "projects": [],
+  "tutorials": []
+}

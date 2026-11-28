@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SHYAM P S — DI Conformist, DI Colorist & Tutorial Content Creator in Kochi, Kerala." />
+  <title>SHYAM P S — DI Conformist &amp; DI Colorist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Syne', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            cream: '#FAF7F2',
+            espresso: '#2B1A12',
+            coffee: '#4A2C1D',
+            latte: '#8B5E3C',
+            sand: '#E5DDD3',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { background-color: #FAF7F2; color: #2B1A12; -webkit-font-smoothing: antialiased; }
+    .card-surface { background: #FFFFFF; border: 1px solid #E5DDD3; transition: transform 0.22s ease, box-shadow 0.22s ease; }
+    .card-surface:hover { transform: translateY(-3px); box-shadow: 0 16px 32px -12px rgba(43, 26, 18, 0.14); }
+    .compare-box { position: relative; overflow: hidden; user-select: none; touch-action: pan-y; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- CLEAN STATIC PUBLIC HEADER (NO ADMIN/EDIT/XML CONTROLS VISIBLE TO VISITORS) -->
+  <header class="sticky top-0 z-30 bg-cream/95 backdrop-blur border-b border-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="font-display font-extrabold text-base sm:text-lg tracking-wider uppercase text-espresso">
+        SHYAM <span class="text-latte">P S</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 font-mono text-xs uppercase tracking-wider text-coffee">
+        <a href="#color-lab" class="hover:text-latte transition">Color Lab</a>
+        <a href="#projects" class="hover:text-latte transition">Featured Works</a>
+        <a href="#tutorials" class="hover:text-latte transition">Tutorials</a>
+        <a href="#contact" class="hover:text-latte transition">Contact</a>
+      </nav>
+      <a href="https://wa.me/919048141736" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-coffee text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-latte transition">
+        Book Suite ↗
+      </a>
+    </div>
+  </header>
+
+  <main id="top" class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-20">
+
+    <!-- HERO & BEFORE/AFTER COLOR LAB -->
+    <section id="color-lab" class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+      <div class="lg:col-span-5 space-y-5">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-sand font-mono text-[11px] uppercase tracking-wider text-latte">
+          <span class="w-2 h-2 rounded-full bg-latte"></span>
+          Available for Feature Films, OTT &amp; Commercials
+        </span>
+
+        <div class="flex items-center gap-4">
+          <img id="heroPortraitImg" src="" alt="Shyam P S" loading="eager" decoding="async" class="hidden w-28 h-36 rounded-2xl object-cover border-2 border-coffee shadow-md shrink-0" />
+          <div>
+            <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-latte">Kochi, Kerala • DI &amp; Color Suite</p>
+            <h1 id="heroHeadline" class="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-espresso mt-1">
+              SHYAM P S
+            </h1>
+            <p id="heroSubtitle" class="font-mono text-xs sm:text-sm text-coffee font-semibold mt-1.5">
+              DI Conformist • DI Colorist • Tutorial Content Creator
+            </p>
+          </div>
+        </div>
+
+        <p id="heroBio" class="text-sm sm:text-base text-espresso/85 leading-relaxed">
+          Precision conforming and theatrical color grading inside <strong>DaVinci Resolve Studio</strong> across <strong>Malayalam, Telugu, Tamil, Kannada &amp; Tulu</strong> cinema—spanning feature films, ZEE5 OTT web series, short films, and commercials.
+        </p>
+
+        <div class="grid grid-cols-3 gap-3 pt-3 border-t border-sand font-mono">
+          <div class="card-surface rounded-xl p-3">
+            <div id="metricCredits" class="text-lg sm:text-xl font-extrabold text-coffee">0+</div>
+            <div class="text-[10px] text-latte uppercase mt-0.5">Credits</div>
+          </div>
+          <div class="card-surface rounded-xl p-3">
+            <div class="text-lg sm:text-xl font-extrabold text-coffee">5 Langs</div>
+            <div class="text-[10px] text-latte uppercase mt-0.5">ML•TE•TA•KN•TU</div>
+          </div>
+          <div class="card-surface rounded-xl p-3">
+            <div class="text-lg sm:text-xl font-extrabold text-coffee">DaVinci</div>
+            <div class="text-[10px] text-latte uppercase mt-0.5">Resolve Studio</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE BEFORE/AFTER LAB -->
+      <div class="lg:col-span-7 card-surface rounded-2xl p-4 sm:p-6 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-sand pb-3.5">
+          <div>
+            <span id="labBadge" class="px-2 py-0.5 rounded bg-cream border border-sand font-mono text-[10px] font-bold uppercase text-latte">FEATURE FILM</span>
+            <h2 id="labTitle" class="font-display text-lg sm:text-xl font-bold text-espresso mt-1">Color Grading Lab</h2>
+          </div>
+          <select id="labSelect" onchange="selectLab(this.value)" class="px-3 py-1.5 rounded-xl bg-cream border border-sand font-mono text-xs font-semibold text-espresso focus:outline-none cursor-pointer"></select>
+        </div>
+
+        <div id="labViewport" class="compare-box aspect-video rounded-xl bg-espresso border border-sand cursor-ew-resize">
+          <div id="labAfterWrap" class="absolute inset-0"></div>
+          <div id="labBeforeWrap" class="absolute inset-0" style="clip-path: inset(0 50% 0 0);"></div>
+          <div id="labDivider" class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[2px] bg-white shadow pointer-events-none">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-coffee text-white font-mono text-[10px] font-bold flex items-center justify-center shadow">⇆</div>
+          </div>
+          <span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-black/70 text-white font-mono text-[10px] uppercase pointer-events-none">Before (Log)</span>
+          <span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-coffee/90 text-white font-mono text-[10px] uppercase pointer-events-none">After (Grade)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORKS BY CATEGORY -->
+    <section id="projects" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-sand pb-4">
+        <div>
+          <p class="font-mono text-xs uppercase tracking-wider text-latte">02 // Portfolio Showcase</p>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold text-espresso mt-1">Featured Works</h2>
+        </div>
+        <div id="categoryFilterBar" class="flex flex-wrap gap-1.5 font-mono text-xs"></div>
+      </div>
+      <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- TUTORIALS -->
+    <section id="tutorials" class="space-y-6">
+      <div class="border-b border-sand pb-4">
+        <p class="font-mono text-xs uppercase tracking-wider text-latte">03 // Breakdowns</p>
+        <h2 class="font-display text-2xl sm:text-3xl font-bold text-espresso mt-1">DaVinci Resolve Tutorials</h2>
+      </div>
+      <div id="tutorialsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card-surface rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div class="space-y-1.5">
+        <p class="font-mono text-xs uppercase tracking-wider text-latte">04 // Bookings &amp; Inquiries</p>
+        <h2 class="font-display text-2xl font-bold text-espresso">Connect With Shyam P S</h2>
+        <p class="text-sm text-espresso/80">Kochi, Kerala, India • Feature Films, OTT Series &amp; Commercial DI</p>
+      </div>
+      <div class="flex flex-wrap gap-3 font-mono text-xs font-bold uppercase">
+        <a href="https://wa.me/919048141736" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-coffee text-white hover:bg-latte transition">WhatsApp ↗</a>
+        <a href="https://www.instagram.com/shyam_p_s_/" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-cream border border-sand text-espresso hover:border-coffee transition">Instagram ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CLEAN STATIC PUBLIC FOOTER (NO ADMIN BUTTONS OR XML CONTROLS) -->
+  <footer class="border-t border-sand bg-white py-6 font-mono text-xs text-latte">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span>© <span id="year">2026</span> <strong class="text-espresso">SHYAM P S</strong> • Kochi, Kerala</span>
+      <span>DI Conformist &amp; Colorist</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Load live portfolio data from data/site-data.json (plus optional local preview if saved on same browser)
+    let SITE_DATA = null;
+    let activeCategory = 'All';
+    let activeLabIdx = 0;
+
+    function esc(s) {
+      return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    async function initPublicSite() {
+      try {
+        const res = await fetch('./data/site-data.json?v=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) SITE_DATA = await res.json();
+      } catch (e) {}
+
+      // Fallback if opened locally before server deploy
+      if (!SITE_DATA) {
+        const cached = localStorage.getItem('shyam_wp_cms_data');
+        if (cached) {
+          try { SITE_DATA = JSON.parse(cached); } catch (e) {}
+        }
+      }
+
+      if (!SITE_DATA) {
+        SITE_DATA = {
+          hero: {
+            headline: 'SHYAM P S',
+            subtitle: 'DI Conformist • DI Colorist • Tutorial Content Creator',
+            bio: 'Precision conforming and theatrical color grading inside DaVinci Resolve Studio across Malayalam, Telugu, Tamil, Kannada & Tulu cinema.',
+            portrait: ''
+          },
+          categories: ['Feature Films', 'Web Series / OTT', 'Short Films', 'Advertisements', 'Music Videos'],
+          labProjects: [
+            { title: 'Panthadikam', badge: 'ZEE5 WEB SERIES', beforeImg: '', afterImg: '' }
+          ],
+          projects: [],
+          tutorials: []
+        };
+      }
+
+      renderHero();
+      renderLabSelector();
+      renderLabView();
+      renderCategories();
+      renderProjects();
+      renderTutorials();
+    }
+
+    function renderHero() {
+      const h = SITE_DATA.hero || {};
+      if (h.headline) document.getElementById('heroHeadline').textContent = h.headline;
+      if (h.subtitle) document.getElementById('heroSubtitle').textContent = h.subtitle;
+      if (h.bio) document.getElementById('heroBio').textContent = h.bio;
+      const img = document.getElementById('heroPortraitImg');
+      if (h.portrait) {
+        img.src = h.portrait;
+        img.classList.remove('hidden');
+      }
+      const total = (SITE_DATA.projects || []).length;
+      document.getElementById('metricCredits').textContent = (total || 19) + '+';
+    }
+
+    function renderLabSelector() {
+      const labs = SITE_DATA.labProjects || [];
+      const sel = document.getElementById('labSelect');
+      sel.innerHTML = labs.map((l, i) => `<option value="${i}">${esc(l.title)}</option>`).join('');
+    }
+
+    function selectLab(idx) {
+      activeLabIdx = parseInt(idx, 10) || 0;
+      renderLabView();
+    }
+
+    function renderLabView() {
+      const labs = SITE_DATA.labProjects || [];
+      const item = labs[activeLabIdx] || { title: 'Color Lab', badge: 'DI GRADE', beforeImg: '', afterImg: '' };
+      document.getElementById('labBadge').textContent = item.badge || 'DI GRADE';
+      document.getElementById('labTitle').textContent = item.title + ' — Before & After';
+
+      const beforeWrap = document.getElementById('labBeforeWrap');
+      const afterWrap = document.getElementById('labAfterWrap');
+
+      beforeWrap.innerHTML = item.beforeImg
+        ? `<img src="${esc(item.beforeImg)}" alt="Before" loading="lazy" decoding="async" class="w-full h-full object-cover block" />`
+        : `<div class="w-full h-full bg-stone-500 flex items-center justify-center font-mono text-xs text-white/80 uppercase">Camera Log Still (${esc(item.title)})</div>`;
+
+      afterWrap.innerHTML = item.afterImg
+        ? `<img src="${esc(item.afterImg)}" alt="After" loading="lazy" decoding="async" class="w-full h-full object-cover block" />`
+        : `<div class="w-full h-full bg-coffee flex items-center justify-center font-mono text-xs text-white uppercase">Final Theatrical Grade (${esc(item.title)})</div>`;
+    }
+
+    function renderCategories() {
+      const cats = ['All', ...(SITE_DATA.categories || [])];
+      const bar = document.getElementById('categoryFilterBar');
+      bar.innerHTML = cats.map(c => `
+        <button type="button" onclick="filterCategory('${esc(c)}')" class="px-3 py-1.5 rounded-lg border transition ${
+          activeCategory === c
+            ? 'bg-coffee text-white border-coffee font-bold'
+            : 'bg-white text-espresso border-sand hover:border-coffee'
+        }">${esc(c)}</button>
+      `).join('');
+    }
+
+    function filterCategory(cat) {
+      activeCategory = cat;
+      renderCategories();
+      renderProjects();
+    }
+
+    function renderProjects() {
+      const grid = document.getElementById('projectsGrid');
+      const all = SITE_DATA.projects || [];
+      const list = activeCategory === 'All' ? all : all.filter(p => p.category === activeCategory);
+
+      if (!list.length) {
+        grid.innerHTML = `<div class="col-span-full p-8 rounded-2xl bg-white border border-dashed border-sand text-center font-mono text-xs text-latte">No projects published in this category yet.</div>`;
+        return;
+      }
+
+      grid.innerHTML = list.map(p => `
+        <article class="card-surface rounded-2xl overflow-hidden flex flex-col">
+          ${p.image
+            ? `<img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" decoding="async" class="w-full aspect-[4/5] object-cover bg-cream block" />`
+            : `<div class="w-full aspect-[4/5] bg-cream flex flex-col items-center justify-center p-6 text-center"><span class="font-mono text-[10px] uppercase text-latte">${esc(p.category)}</span><span class="font-display text-xl font-bold text-espresso mt-2">${esc(p.title)}</span></div>`
+          }
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <div class="font-mono text-[11px] uppercase text-latte font-bold">${esc(p.category)} • ${esc(p.language || '')}</div>
+              <h3 class="font-display text-lg font-bold text-espresso mt-1">${esc(p.title)}</h3>
+              <p class="font-mono text-xs text-coffee mt-0.5">${esc(p.role || 'DI Colorist')}</p>
+              ${p.description ? `<p class="text-sm text-espresso/80 mt-2 leading-relaxed">${esc(p.description)}</p>` : ''}
+            </div>
+            ${p.videoUrl ? `<a href="${esc(p.videoUrl)}" target="_blank" rel="noopener noreferrer" class="font-mono text-xs font-bold uppercase text-coffee hover:text-latte transition">Watch Project ↗</a>` : ''}
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function renderTutorials() {
+      const grid = document.getElementById('tutorialsGrid');
+      const list = SITE_DATA.tutorials || [];
+      if (!list.length) {
+        grid.innerHTML = `<div class="col-span-full p-6 rounded-2xl bg-white border border-dashed border-sand text-center font-mono text-xs text-latte">Tutorials added in the dashboard appear here automatically.</div>`;
+        return;
+      }
+      grid.innerHTML = list.map((t, idx) => `
+        <div class="card-surface rounded-2xl p-5 flex flex-col justify-between space-y-4">
+          <div>
+            <span class="px-2 py-0.5 rounded bg-cream border border-sand font-mono text-[10px] font-bold uppercase text-latte">REEL 0${idx + 1} • ${esc(t.tag || 'Color')}</span>
+            <h3 class="font-display text-base font-bold text-espresso mt-2">${esc(t.title)}</h3>
+          </div>
+          <a href="${esc(t.url)}" target="_blank" rel="noopener noreferrer" class="font-mono text-xs font-bold uppercase text-coffee hover:text-latte transition">Watch on Instagram ↗</a>
+        </div>
+      `).join('');
+    }
+
+    // Comparison slider drag
+    (function () {
+      const box = document.getElementById('labViewport');
+      const before = document.getElementById('labBeforeWrap');
+      const div = document.getElementById('labDivider');
+      let active = false;
+      const move = x => {
+        const r = box.getBoundingClientRect();
+        const pct = Math.max(0, Math.min(100, ((x - r.left) / r.width) * 100));
+        before.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+        div.style.left = pct + '%';
+      };
+      box.addEventListener('mousedown', e => { active = true; move(e.clientX); });
+      window.addEventListener('mouseup', () => active = false);
+      window.addEventListener('mousemove', e => { if (active) move(e.clientX); });
+      box.addEventListener('touchstart', e => { active = true; move(e.touches[0].clientX); }, { passive: true });
+      window.addEventListener('touchend', () => active = false);
+      box.addEventListener('touchmove', e => { if (active) move(e.touches[0].clientX); }, { passive: true });
+    })();
+
+    initPublicSite();
+  </script>
+</body>
+</html>
