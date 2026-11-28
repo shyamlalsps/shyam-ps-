@@ -89,8 +89,8 @@
 
     .suite-glass {
       background: rgba(18, 19, 22, 0.88);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       border-bottom: 1px solid var(--border-charcoal);
     }
 
@@ -630,7 +630,7 @@
   <noscript><div style="padding:24px;font-family:sans-serif;color:#f3f4f6;max-width:640px;margin:auto"><h1>SHYAM P S</h1><p>DI Conformist, DI Colorist &amp; Tutorial Content Creator, Kochi, Kerala. Theatrical and OTT color grading and conforming in DaVinci Resolve Studio across Malayalam, Telugu, Tamil, Kannada &amp; Tulu cinema.</p><p><a style="color:#22d3ee" href="https://wa.me/919048141736">WhatsApp</a> · <a style="color:#22d3ee" href="https://www.instagram.com/shyam_p_s_/">Instagram @shyam_p_s_</a></p><p>Please enable JavaScript to view the full portfolio.</p></div></noscript>
 
   <!-- CINEMATIC SUITE INTRO / WIPE OUTRO OVERLAY -->
-  <div id="cinemaIntroOverlay" aria-hidden="true" class="intro-outro-exit">
+  <div id="cinemaIntroOverlay" aria-hidden="true" class="intro-outro-exit hidden">
     <div class="intro-scanline"></div>
     <div class="relative z-10 text-center px-6 max-w-md w-full space-y-4">
       <div class="font-display text-3xl sm:text-4xl font-extrabold uppercase text-white animate-intro-title">
@@ -4390,7 +4390,7 @@
               class="group text-left rounded-xl overflow-hidden bg-charcoalBg border-2 ${isCurrent ? 'border-cyanBright shadow-[0_0_16px_rgba(34,211,238,0.35)]' : 'border-charcoalBorder hover:border-cyanBright'} transition flex flex-col"
             >
               <div class="relative aspect-[4/5] w-full bg-black overflow-hidden">
-                <img src="${src}" alt="${escapeHTML(p.title)}" class="w-full h-full object-cover block group-hover:scale-105 transition" />
+                <img src="${src}" alt="${escapeHTML(p.title)}" class="w-full h-full object-cover block group-hover:scale-105 transition" / loading="lazy decoding="async"
                 ${isCurrent ? `<span class="absolute top-2 right-2 px-2 py-0.5 rounded bg-cyanMain text-charcoalBg font-mono text-[9px] font-extrabold uppercase">★ Active Cover</span>` : ''}
               </div>
               <div class="p-2.5 font-mono">
